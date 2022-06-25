@@ -17,6 +17,7 @@ public class Moving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         moveVector.x = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveVector.x * speed, moveVector.y);
 
@@ -36,6 +37,8 @@ public class Moving : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+   
 
 
 }
